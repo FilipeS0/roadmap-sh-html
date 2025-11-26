@@ -63,8 +63,47 @@ Search Engine Optimization (Otimização de mecanismos de procura), é a prátic
 - ```<head>``` Onde se encontram os metadados.
 
 ## Tags Textuais
+- Headings: começando do ```<h1>``` e indo até o ```<h6>```, onde h1 seria o assunto principal de uma pagina e quanto os seguintes headings seriam subtopicos referentes ao principal.
+- ```<title>```: titulo da página, esse se encontra dentro da tag ```<head>```.
+- ```<p>```: Usada para fazer paragráfos.
+- ```<hr>```: Vai mostrar uma linha horizontal no navegador, usada para fazer uma separação na pagina.
+- ```<br>```: Usado para quebrar uma linha de um paragrafo
+- ```<srong>```/```<em>```: Têm valor semantico para dar força/ênfase a determinada parte de um texto.
+- ```<a>```: Anchor tag, tag âncora. Pode ser usada para referenciar alguma coisa na propria página (referenciando um id ou algo assim) ou encaminhar o usuario para outra pagina (referenciando um link externo mesmo).
+- ```<mark>```: Para marcar uma parte de um texto como se fosse um marca texto sobre.
+- ```<pre>```: Utilizada para usar um texto preformatado onde não quer mudar a estrutura em que foi escrito (um exemplo é um poema, um codigo de programação).
+- ```<sup>```/```<sub>```: Usadas para representar calculos matemáticos ou textos que ficam acima/abaixo da linha comum.
 
+## Agrupamento de Texto
+- ```<div>```: Usada para criar divisorias no corpo do documento HTML. Em uma div vc coloca tags textuais usando a div como um container.
+- ```<span>```: Usada para criar containers Inline level, ou seja, que não quebra a linha ou separa o texto do restante. Pode ser usado para estilizar uma parte do texto e diferenciar das demais.
 
-#### TAGS HTML
-### ```<head>```
-A tag ```<head>``` é onde ficam os metadados da pagina web, é onde se colocam tags como ```<link>``` que pode linkar ao _CSS_ da pagina, ao _JS_, etc. Também pode 
+## Atributos padrão
+- Id : Deve ser único, nunca usar mais de um mesmo id em outros elementos. Id é o seletor de mais alto nível de especificidade quando comparado com o restante.
+- Class : Diferente do Id, classes podem ser atribuidas a diversos elementos que você queira compartilhar do mesmo comportamento ou estilização. Também tem um nível abaixo em especificidade em relação ao Id.
+- Data Attributes : São para tags que permitem comportamentos diferentes, um exemplo é o button:submit, submit seria o atributo, então é uma forma de especificar também. Aqui tem o mesmo nível de especificidade de uma classe, então quem prevalece é quem vem por ultimo.
+
+## Tipos de listas
+- `<ul>` : lista desordenada, onde a lista não precisa de uma ordem numerica ou algo do tipo, são mostrados itens com _bullets points_ e contem itens com a tag `<li>`.
+- `<ol>` : lista ordenada, onde cada item da lista é enumerado. Contém tipos diferentes, numeral (1. 2. ...), alfabetico (a. b. ... ou A. B. ...), romano (i. ii. ... ou I. II. ...).
+- `<dl>` : lista de definição, esta é a diferente das demais, pois seus itens não são em `<li>`, mas em outras tags como `<dt>` Definition term (termo de definição), onde é colocado o termo e `<dd>` (definition description) onde é colocado a descrição do termo.
+(Listas podem ser aninhadas sendo uma contida em uma outra).
+
+## Tag para Tabela
+`<table>` é uma tag usada para mostrar tabelas, pode ser composta por `thead`, `tbody`, `tfoot` que serão a composição mais robusta da tabela, mas a parte principal são as tags: 
+- `<tr>` para criar uma nova linha, aqui que serão contidas as proximas tags.
+- `<th>` para ser Header, o nome de uma coluna ou linha.
+- `<td>` onde preenche o dado de uma celula.
+
+## Medias tags
+- `<img>` para imagens, usando o atributo `src=""` vai referenciar onde está a imagem e mostrar no documento HTML.
+- `<video>` basicamente como uma imagem para pegar o arquivo e mostrar, porém com diversas funcionalidades extras, onde é possivel settar para ao abrir a pagina web o video iniciar tocando, onde pode colocar seletor de volume (baixar e aumentar), também é possível colocar o botão de play/pause, e diversas outras funcionalidades.
+- `<audio>` assim como o video também tem diversas funcionalidades, autoplay, volume, pause/play.
+- Content Security Policy (CSP), é uma segurança padrão usada para previnir _cross-site scripting_ (XSS). É uma boa prática não importar imagens, videos, audios ... de outros sites, pois pode acontecer um clickjacking ou ataque de injeção de codigos. Mas também o site que está _hosteando_ a imagem pode trocar esta imagem e colocar algo não relacionado ao esperado.
+- `<iframe>` pode conter um outro elemento HTML, um exemplo clássico é trazer um video do YouTube para seu website sem que o usuario precise acessar outra pagina ou seja redirecionado para assistir.
+
+## Forms
+Formulários existem  `method=GET` e `method-POST`. 
+- `GET` é utilizado para pedir dados do servidor, quando usado é perceptivel pois os dados ficam na URL do site e há um limite de caracteres. 
+- `POST` é utilizado para enviar dados para um servidor, para criar ou atualizar um recurso. Por exemplo enviando uma senha, dados de uma compra, upload de imagem.
+Também tem
