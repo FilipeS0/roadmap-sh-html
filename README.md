@@ -103,7 +103,36 @@ Search Engine Optimization (Otimização de mecanismos de procura), é a prátic
 - `<iframe>` pode conter um outro elemento HTML, um exemplo clássico é trazer um video do YouTube para seu website sem que o usuario precise acessar outra pagina ou seja redirecionado para assistir.
 
 ## Forms
+### Atributos do formulario
 Formulários existem  `method=GET` e `method-POST`. 
 - `GET` é utilizado para pedir dados do servidor, quando usado é perceptivel pois os dados ficam na URL do site e há um limite de caracteres. 
 - `POST` é utilizado para enviar dados para um servidor, para criar ou atualizar um recurso. Por exemplo enviando uma senha, dados de uma compra, upload de imagem.
-Também tem
+Também tem o atributo `action="pagina-para-lidar-com-formulario"`.
+### Tags para usar em um formulário
+As principais tags são: 
+- `<label>` Basicamente é o nome do caixa do formulário, é o que diz o que uma caixa de input espera que o usuario escreva. Ex.: email, senha ... Detalhe que esta tag pode referenciar um `<input>`, ou seja, ao clickar em um label o teclado estará habilitado para digitar na barra de texto em que ele está referenciando.
+- `<input>` o input existem em diversos tipos como: submit, reset, email, password, name, button, checkbox, color, date, tel, number, range, search, radio, color, file... E cada um vai ter um comportamento e um tipo de entrada que é aceitável. Cabe se aprofundar melhor neste em uma outra hora.
+- `<textarea>` é um tipo de input também, aqui é para grandes textos.
+- `<select>` usado junto com a tag `<option>` para escolher, por exemplo, cidade, país ...
+
+### Validação de formulários 
+Validar os campos preenchidos no formulário é importante, para que os dados recebidos sejam precisos e aceitáveis. Para isso é usado alguns atributos dentro das tags de `<input>`. 
+Ex.: 
+- atributo `required`: para que o formulário só possa ser enviado caso este campo de input seja preenchido.
+- `min-length` e `max-length`: exige um numero mínimo de caracteres e delimita um numero máximo.
+- `pattern`: específica um determinado padrão para o dado que está sendo inserido. ex.: telefone (xx) xxxxx-xxxx.
+- `min`, `max`, `step`: especifica o minimo, máximo de valor em input númerico, e o incremento, por valor começando do minimo.
+
+## Marcação Semântica
+Usando tags semânticas torna a página mais acessível para humanos e máquinas, por isso é importante aprender tags e suas funções para que o que você está construindo seja melhor de se ler, melhor de se encontrar. Só usando as tags corretas e uma boa estrutura você consegue bons resultados em mecanismos de busca.
+
+### Citação/Aspas
+- `<abbr>` Abreviação para alguma sigla, usar o atributo `title` com o nome do que a abreviação extende para.
+- `<cite>` Usada para fazer citação de um livro, filme, fala, letra de música, enfim, para trazer uma citação. As letras ficam em italico.
+- `<blockquote>` Representa citação de uma seção de um outro texto. Pode ser usada junto de uma tag `<cite>` (para trazer a url da citação).
+- `<address>` Usado para informar o contato de um autor ou dono de um documento ou artigo. Pode conter endereço físico, endereço de email, telefone e link de redes sociais. Tipicamente usada no _footer_ de uma pagina.
+- `<q>` Parecido com o _blockquote_, mas essa tag é melhor utilizada para pequenas citações, até pq diferente da `<blockquote>`, a `<q>` tag é inline level.
+
+### Tags para layout
+`<header>` Comumente compondo barra de navegação, logo, barra de pesquisa. É a seção que fica no topo do arquivo HTML.
+`<
