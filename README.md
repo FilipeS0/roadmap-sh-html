@@ -141,3 +141,9 @@ Usando tags semânticas torna a página mais acessível para humanos e máquinas
 `<article>` é uma seção onde o conteúdo é completo por si só, o que está dentro de um _article_ não necessita de todo o resto da página para fazer sentido.
 `<aside>` é um texto que acrescenta ao conteúdo principal, mas que se retirado não faz falta. Pode ser usado sidebars, citações...
 `<footer>` fica no fim de um documento HTML, lá estão barras de navegação, contato, copyright, sobre o autor entre outras coisas. Também pode ser utilizado dentro de específicas sections para denotar o fim de um determinado conteúdo.
+
+## Importando CSS e JavaScript
+### CSS 
+CSS pode ser utilizado da forma _inline_ (dentro de uma tag HTML mesmo), _internal_ (dentro de um arquivo HTML usando `<style>` tag na seção `<head>`) e _external_ (usando `<link:css rel="stylesheet" type="text/css" href="style.css">` que linka para um arquivo .css). Sempre utilizar CSS _external_.
+### JavaScript
+Para utilizar JavaScript em um arquivo HTML é utilizado a tag `<script>`, pode ser feito os codigos dentro do proprio corpo do HTML, mas é uma boa prática importar o código usando `src="index.js"` dentro da tag `script`.
