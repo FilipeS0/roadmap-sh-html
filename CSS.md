@@ -87,3 +87,7 @@ box-sizing: border-box;
 Muito usado para zerar os valores de margin e padding originais do browser e sobrescrever manualmente futuramente em determinadas tags.
 
 ## Seletores combinados
+Seletores Combinados no CSS define a relação entre elementos baseados na posição na estrutura do documento. Eles permitem você _targetar_ elementos que são descendentes, filhos, irmãos adjascentes, ou irmãos no geral de outros elemetos. Isso fornece uma maneira poderosa de aplicar estilos baseados na hierarquia do HTML, indo alem dos simples seletores classe ou id.
+
+* Descendente
+  
