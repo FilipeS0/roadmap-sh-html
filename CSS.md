@@ -182,4 +182,20 @@ Os seletores de atributos em CSS dão _target_ em elementos HTML baseado na pres
 
  Obs.: Usar em aspas (`""`) vai funcionar em alguns casos, mas pode ter problema dependendo do browser. Então é recomendado sempre usar.
 
- 
+
+## Estilo de Texto
+Estilo de Texto (TEXT STYLING) é o controle da aparência de elementos de texto em uma página web. Isto inclui propriedades que afetam a 'font' -family, -size, -weight, -color e -style. Também abrange propriedades para texto como text... -align, -decoration, -transform, letter-spacing e line-height.
+
+### Fontes
+- `font-family` no CSS são maneiras de especificar o tipo de letra usada para mostrar o texto em uma página web.
+- `font-style` no CSS é usado para alterar a aparência de um texto, onde pode colocar como normal, oblique, italic.
+- `font-weight` se refere a _thikness_ ou _boldeness_ dos caracteres. No CSS é uma propriedade que permite você especificar quão forte ou leve a fonte deve parecer. Os valores podem ser númericos (como 100, 400, 700) ou descritivos (como `normal`, `bold`, `lighter`, `bolder`) oferecendo controle sobre a ênfase visual do texto.
+- `font-size` usado para determinar o tamanho do texto no browser. É uma propriedade fundamental que controla a legibilidade de elementos textuais. Existem varias unidades diferentes para fontes como: px, em, rem, %, vw/vh. É importante escolher o tamanho certo para a fonte para criar um apelo visual e um design acessível.
+- `font-variant` usada para controlar a exibição de diferentes variações de uma fonte, como 0 riscado, glifos alternativos e outros.
+- `font` usando esta propriedade você consegue atribuir o que quer sem precisar usar as propriedades citadas acima. Ex.: `font-family`, `font-weight` ... basta usar `font: "Arial", bold`.
+Com o Google Fonts é possível encontrar diversas fontes gratuitas para nosso website. Ao invés de depender apenas da limitada quantidade de fontes que vem por padrão no computador, só precisa _linkar_ a fonte em um arquivo HTML e atribui-lá onde você quer usá-la.
+
+### Algumas propriedades de textos
+- `color` vai definir a cor do texto, podendo atribuir a cor de diversas formas como usando nome ("red" or blue ...), hexadecimal (#FF1199), RGB (255, 0, 0), RGBA (igual o RGB mas tem um valor no final para a transparência), HSL (_hue_, _saturation_, _lightness_) e HSLA (HSL + transparência).
+- `direction` vai definir para que direção a escrita vai, da esquerda para direita (LTR) e tem direita para esquerda (RTL), usado para outras linguas como árabe e hebraico.
+- `text-align`
