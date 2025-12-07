@@ -198,4 +198,29 @@ Com o Google Fonts é possível encontrar diversas fontes gratuitas para nosso w
 ### Algumas propriedades de textos
 - `color` vai definir a cor do texto, podendo atribuir a cor de diversas formas como usando nome ("red" or blue ...), hexadecimal (#FF1199), RGB (255, 0, 0), RGBA (igual o RGB mas tem um valor no final para a transparência), HSL (_hue_, _saturation_, _lightness_) e HSLA (HSL + transparência).
 - `direction` vai definir para que direção a escrita vai, da esquerda para direita (LTR) e tem direita para esquerda (RTL), usado para outras linguas como árabe e hebraico.
-- `text-align`
+- `text-align` é usado para definir como o texto se alinhará, ex: `center`, `start`, `end`, `right`, `left`, `justify`.
+- [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-decoration) no CSS se refere ao estilo aplicado ao texto para melhorar sua aparência ou transmitir um significado específico. Envolve linhas sobre o conteudo, sob o conteudo, riscando o conteudo (~asim~).
+- [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-transform) controla a 'capitalização' de texto. Pode transformar um texto em _uppercase_, _lowercase_, _capitalize_ ou deixar normal.
+- [text spacing](https://www.codeguage.com/v1/courses/css/text-spacing) envolve ajudar o espaço entre caracteres, palavras e linhas de texto. Para isso é usado [`letter-spacing`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/letter-spacing), [`word-spacing`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/word-spacing) e [`line-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/line-height).
+- [text-shadows](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/text-shadow) no CSS adiciona profundidade e interese visual criando uma cópia borrada por trás do texto. Multiplas sombras podem ser aplicadas em um só texto. usando `text-shadow` você vai indicar o desvio horizontal, desvio vertical, raio de desfoque e a cor da sombra.
+
+
+## Opacidade
+A [opacidade](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/opacity) no CSS controla a transparência de um elemento. Isso determina o quanto do background por trás do elemento será visível. Um valor de `1` significa que o elemento é opcao (sem transparência), enquanto o valor `0` significa que é invisível, completamente transparente. Então os valores entre `0` e `1` devem ser usados para quando quiser algum nível de transparência.
+
+## Background
+No CSS o termo "background" se refere a propriedade que controla a aparência visual do _background_ de um elemento. Isto inclui aspectos como _background_ _color_, _image_, sua posição (_position_), se ele se repete (_repeats) e seu tamanho (_size_). Estas propriedades permitem você adicionar interesse visual e customizar a aparência de seus websites.
+
+- [Cor do background](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-color) preenche o background de todo o elemento incluindo deu _padding_, mas não a borda ou a _margin_. Você pode especificar a cor usando o nome, hexadecimal da cor, valor RGB, entre outros formatos.
+- [Imagem de background](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-image) é setada por uma url `background-img: url("link.png");`, mas pode ter outros valores separados por uma `,`. Alguns valores são: `linear-gradient(to top, color1, colo2)` (para colocar um 'degradê' linear, pode escolher a direção "to bottom", "to right" "to left") e `radial-gradient` (para coocar um 'degradê' circular, direções são "0deg"(top), "90deg"(right), "180deg"(bottom), "270deg"(left)).
+- [Posição do background](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-position) no CSS controla onde uma imagem de _background_ é colocada dentro do seu elemento. É possível usar valores como `right`, `left`, `bottom`, `top` e `center` ou também valores númericos (px, %, etc) para setar a posição exata.
+- [Anexo de background](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/background-attachment) essa propriedade vai controlar como a imagem de fundo se comporta quando a página é _scollada_. Pode escoher valores como `fixed` que a imagem fica estática, `scroll` que vai subir junto da página e `local` a imagem é local ela vai subir junto com o elemento.
+
+## Cores
+- RGB: pode ser setada usando valores inteiros (variam de 0 a 255) ou % `rgb(0, 0, 0)`.
+- HSL: mais fácil de ser ajustado pois primeiro é setada pela tonalidade (0 a 360 graus), depois sua saturação (0 a 100%) e iluminação (0 a 100%).
+- HEX: valores hexadecimais têm 6 digitos e um `#` como prefixo.
+- Cores nomeadas: cores mais básicas pode usar apenas seus nomes (red, black, white ...).
+- RGBA, HSLA: a adição do sufixo `A` representa sua opacidade.
+
+## Box Model
