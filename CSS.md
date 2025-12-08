@@ -247,3 +247,53 @@ No CSS, a propriedade [outline](https://developer.mozilla.org/en-US/docs/Web/CSS
 ## Unidades CSS
 [CSS Units](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Values_and_units) define o tamanho do elemento e propriedades em uma pagina web. eles especificam como medidas como width, height, font size e margins são interpretadas pelo browser. Estas unidades podem ser absolutas, como px ou cm, ou podem ser relativas, como em, rem, ou viewports (vw, vh), permitindo flexibilidade e responsividade do layout que adapta a diferentes tamanhos de telas e resoluções.
 
+### Absolute x Relative units
+Unidades absolutas no CSS representam medidas fixas, como pixels(px) ou centimetros(cm), e vai sempre renderizar no mesmo tamanho sem considerar o tamanho da tela ou outros fatores. Unidades relativas, por outro lado, são baseadas em outros valores, como o tamanho da fonte (font-size) dos elementos pais (em), a largura da janela (vw), ou o tamanho da fonte do elemento raiz (rem), permitindo layouts mais flexiveis e responsivos.
+
+### Unidades com funções
+Unidades com funções no CSS permite calcular valores dinamicamente para propriedades usando funções como `calc()`, `min()`, `max()` e `clamp()`. Estas funções te habilita fazer operações matematicas e comparações diretamente dentro do CSS, fazendo seus designs mais flexiveis e responsivos se adaptando a diferentes tamanhos de telas e contextos.
+
+## Display
+A propriedade display no CSS controla como um elemento é renderizado em uma página web, especificamente definindo seu tipo de caixa e como ela interage com outros elementos. Isso determina se um elemento é tratado como um elemento `block-level` (pegando toda a _width_ disponivel), um elemento `inline` (fluindo dentro do texto), ou algo diferente, como uma tabela ou um container _grid_.
+
+### Inline
+A propriedade `display: inline;` no CSS é usada para especificar que um elemento deveria ser exibida como um elemento _inline_. Elementos _inline_ flui pelo conteudo como um texto dentro de um paragrafo. Um elemento _inline_ ocupa somente a largura suficiente para conter o conteudo. Setar valores de _width_ e _height_ não tem efeito em um elemento _inline_.
+
+### Block
+A propriedade `display: block;` no CSS faz um elemento se comportar como um elemento `block-level`. Isso significa que ele usará toda a largura disponível para si, começando de uma nova linha e empurrando elementos ao seu lado para uma nova linha também. Elementos do tipo _block_ geralmente compõe a maior parte estrutural de uma página web.
+
+### Inline-Block
+A propriedade `display: inline-block` vai ter as característivas dos dois citados acima, vai ser inline e vai conseguir setar altura e largura.
+
+### None
+Se um elemento está com `display: none;` é como se ele não existisse, ele não vai usar nenhum espaço de uma página web.
+
+### Visibility
+Se um elemento tem a propriedade `visibility: hidden;` ele desaparece da página mas o espaço que ele ocupava não some igual no `display: none;`.
+
+## Position
+Posição (position) no CSS controla como um elemento é colocado dentro de um 'container' ou do documento em si. Isso permite você definir precisamente onde um elemento aparece na página, influenciando sua relação com outros elementos e o layout geral. Diferentes valores de posições oferecem variados niveis de controle.
+
+### Posição relativa
+Posição relativa permite deslocar um elemento de sua posição normal no fluxo do documento. Ao invés de ser fixado em um local, o elemento é movido em relação a onde deveria estar se ele estivesse estaticamente posicionado. Este movimento não afeta o posicionamento de outros elementos ao seu redor, eles se comportam como se o elemento ainda estivesse em sua posição original. Daí pode especificar a quantidade de movimento usando as propriedades `top`, `right`, `bottom` e `left`.
+
+### Posição absoluta
+Posição absoluta em CSS permite posicionar com precisão um elemento em relação a seu ancestral posicionado mais proximo (um ancestral com valor de posição diferente de `static`). Se esse tipo de ancestral não existe, o elemento é posicionado em relação a seu container inicial, que é normalmente o elemento `<html>`. Elementos com a `position: absolute` são removidos do fluxo normal do documento, o que significa que ele não altera a posição dos elementos ao seu redor.
+
+### Posição Pegajosa (Sticky)
+A Sticky position no CSS é um híbrido de posição relativa e fixa. Um elemento com `position: sticky;` é inicialmente posicionado relativamente, mas quando o usuário _scrolla_ para um ponto onde o elemento normalmente sairia da tela, ele se torna fixo, grudando no deslocamento especificado (ex.: `top: 0`) até o limite do bloco que o contém seja alcançado.
+
+### Posição fixa
+Posição fixa em CSS permite que um elemento seja travado em relação a janela do navegador. Isto significa que mesmo quando o usuário _scrolla_ a página, o elemento continua visível na mesma posição na tela. É frequentemente usado para barras de navegação, rodapés ou outros elementos que precisam persistir na tela.
+
+### Posição estática
+Posição estática é o valor padrão que um elemento recebe na propriedade `position`. Elementos com posições estáticas são renderizados na ordem que eles aparecem no HTML, seguindo o fluxo normal do documento. Eles não podem ser movidos usando as propriedades `top`, `right`, `bottom` e `left`.
+
+## Z-Index / Stacking Context
+Z-index em CSS controla a ordem de empilhamento vertical dos elementos que se sobrepõem. Elementos com um valor z-index maior vai aparecer na frente de elementos com um valor menor. O contexto de empilhamento (stacking context) é uma conceituação tridimensional de elementros HTML ao longo de um eixo z imaginario em relação ao visualizador, que determina a ordem em que o elemento aparece, na frente ou atrás de outros.
+
+## CSS Specificity
+A especificidade de CSS é o conjunto de regras que browsers usam para determinar qual declaração CSS se aplica em um elemento quando existe conflito de multiplas regras. Isso é essencialmente um sistema de peso que prioriza determinados seletores de CSS sobre outros, garantindo que o estilo mais relevante seja aplicado. Entender especificidade é crucial para controlar como seus estilos de CSS são aplicados e resolver problemas inesperados.
+
+## Tabelas
+No CSS tabelas são usadas para formatar dados tabulares em uma pagina web, 
