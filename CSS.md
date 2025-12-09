@@ -296,4 +296,49 @@ Z-index em CSS controla a ordem de empilhamento vertical dos elementos que se so
 A especificidade de CSS é o conjunto de regras que browsers usam para determinar qual declaração CSS se aplica em um elemento quando existe conflito de multiplas regras. Isso é essencialmente um sistema de peso que prioriza determinados seletores de CSS sobre outros, garantindo que o estilo mais relevante seja aplicado. Entender especificidade é crucial para controlar como seus estilos de CSS são aplicados e resolver problemas inesperados.
 
 ## Tabelas
-No CSS tabelas são usadas para formatar dados tabulares em uma pagina web, 
+No CSS tabelas são usadas para formatar dados tabulares em uma pagina web, organizando informações dentro de linhas e colunas. O CSS fornece propriedades para controlar a aparência de tabelas, incluindo bordas, espaçamento, alinhamento e estilização de células individuais, linhas e colunas. Estas propriedades habilitam desenvolvedores criar apelos visuais e tabelas bem estruturadas que mostram dados de forma eficaz.
+Algumas propriedades:
+* `border-collapse`
+* '`border-spacing`
+* `caption-side`
+* `empty-cells`
+* `table-layout`
+
+## Listas
+Listas no CSS são usadas para estilizar o elemento lista do HTML, como as `ul`, `ol` e `dl`. O CSS fornece propriedades para controlar a aparência de marcadores de listas (_bullets_ ou numeros), a posição deles e o estilo no geral dos itens na lista. Isso permite customizar a aparencia visual da lista além do estilo padrão do navegador.
+
+## Imagens e Filtros
+O CSS permite incorporar imagens em seus web designs e manipular sua aparência. Você pode usar CSS para controlar o tamanho da imagem, a posição e como ela interage com o conteudo ao seu redor. Além disso, os filtros de CSS permitem a aplicação direta de efeitos visuais, como desfoque, ajuste de cores e transformações, para imagens, deste modo melhorando seu apelo visual sem requerer edições de imagens de softwares externos.
+
+## Pseudo-classes
+Pseudo-classes no CSS são palavras-chaves adicionadas ao seletor que especifica um estado especial do elemento selecionado. Eles deixam você estilizar um elemento baseado em coisas como interações do usuário (ex: colocar o mouse em cima de um hyperlink), sua posição na estrutura do documento (ex: o primeiro elemento filho usando `first-child`) ou outras caracteristicas de elemento. Eles permitem você aplicar estilos aos elementos dinamicamente sem precisar modificar o HTML ou usar JavaScript.
+
+## Pseudo-elementos
+Pseudo-elementos no CSS deixam você estilizar partes especificas de um elemento. Eles permitem você adicionar estilos a elementos que não existem defato na estrutura do HTML, como a primeira linha de um parágrafo ou o conteúdo antes ou depois de um elemento. Isto é feito usando dois pontos duas vezes (::) seguido pelo nome do pseudo-elemento.
+
+## Flow Layout
+O fluxo do layout é a forma padrão que elementos são posicionados em uma pagina web. Elementos são mostrados um após o outro, como palavras em uma frase, seguindo o fluxo natural do HTML. Elementos _block-level_ tomam a largura completa disponível e começam em uma linha nova, enquanto elementos _inline_ fluem dentro do conteúdo, ocupando apenas o espaço necessário.
+
+### Floating Elements
+Elementos flutuantes no CSS permitem você retirar um elemento do fluxo natural do documento e posicioná-lo à esquerda ou à direita do seu container. Outros conteúdos seguirão ao redor do elemento flutuante. Esta tecnica é comumente usada para criar layouts onde textos são quebrados ao redor de imagens ou para posicionar elementos lado a lado.
+
+### Layout Multicoluna
+Layout multicolunas no CSS permite você dividir um bloco de conteudo em multiplas colunas, similiar ao layout de jornais. Este recurso possibilita texto e outros conteudos fluírem automaticamente de uma coluna para a próxima, melhorando a legibilidade e fazendo o uso eficiente do espaço de tela, especialmente para artigos longos ou listas. Você pode controlar o numero de colunas, o _gap_ entre elas e uma regra (linha) entre as colunas para uma separação visual.
+
+### Flexbox
+Flexbox é um modelo de layout do CSS que fornece uma maneira eficiente de organizar, alinhar e distribuir espaço entre itens em um conteiner, mesmo quando seus espaços são desconhecidos ou dinâmico. Ele simplifica a criação de layouts complexos, oferecendo ferramentas poderosas para controlar a direção, a ordem, o tamanho e o alinhamento dos elementos dentro de um conteiner. Flexbox é particularmente útil para projetar interfaces de usuario responsivas e adaptaveis.
+
+### Grid Layout
+Grid Layout é um sistema de layout bidimensional para o CSS, possibilitando você controlar a posição e tamanho de elementos em um _grid_ conteiner. Ele divide uma pagina web em linhas e colunas, permitindo posicionamento preciso de conteudo e criando layouts complexos com facilidade. Este metodo oferece flexibilidade e controle sobre a disposição de elementos, superando metodos como _floats_ ou _position_.
+
+## Animações
+### Transforms
+Transforms no CSS permite você alterar o formato e a posição de elementos em um espaço bi ou tridimensional. Isto inclui operações como _rotação_ (rotate), _dimensionamento_ (scale), _distorcer_ (skew) e translatar (_translate_) elementos, fornecendo uma maneira de criar efeitos visualmente atraentes e manipular o layout sem afetar o fluxo do documento subjacente.
+
+### Transitions
+Transições no CSS permite você mudar suavemente valores de propriedades durante um período especificado. Ao inves de uma mudança abrupta, uma transição cria um efeito gradual quando uma propriedade do CSS muda, como ao passar o mouse sobre um elemento ou quando uma classe é adicionado ou removida. Isto adiciona um polimento visual e melhora a experiencia do usuario fazendo interações mais fluidas e responsivas.
+
+### Keyframes
+Animação Keyframe no CSS permite você controlar os passos intermediários em uma sequencia de animação CSS. Ao inves de só definir o estado do começo e do fim, você pode especificar vários pontos (keyframes) ao longo da linha do tempo da animação, definindo os estilos que um elemento deveria ter em cada ponto. Isto fornece um controle sobre como a aparencia de um elemento muda com o tempo, permitindo animações complexas e visualmente atraentes.
+
+## Media Queries
