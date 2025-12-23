@@ -65,6 +65,26 @@ Data type se refere ao tipo de data que uma variável pode 'segurar'. Existem 7 
 - Number representa numeros com pontos flutuantes como um 37 ou -8,4. Existe a função `Number()` que pode transformar um outro tipo em um Number.
 - Boolean pode ser dois tipo `true` ou `false`, são valores lógicos e essenciais para controle do fluxo de um programa, muito usados em `while`, `for` `if`.
 - null é a representação de nada, de uma variavel vazia, onde não aponta para nenhum objeto. Pode ser usada para zerar o valor de uma variável.
-- 
+- Symbols eu não sei explicar bem.
 
 Você pode usar `typeof operator` para imprimir o tipo de um valor, o output será uma string, ex: `console.log(typeof 42) // output: number`.
+
+###  Objects
+Objeto em JavaScript é um tipo de estrutura de dados com chaves e valores, valores que podem ser de qualquer tipo de dados. Por exemplo, posso criar um objeto carro com caracteristicas como pneu, cor, ano e cada caracteristica recebe um valor.
+
+- Prototypes: é a forma de se fazer herança em JavaScript. Não consigo explicar a fundo no momento.
+- Objetos integrados: existem diversos objetos integrados no JavaScript, alguns como `Math`, `Number`, `Date`, `String`, `Error`, `Function`, `Boolean`.
+
+## Type Casting
+Conversor de tipo (ou _typecasting_) significa a transferência de dado de um tipo para outro. Conversão implícita acontece quando o compilador (para linguagens compiladas) ou o _runtime_ (para linguagens de script) automaticamente convertem os tipos de dados. O código fonte também pode exigir explicitamente que uma conversão ocorra.
+
+### Type Conversion/Type Coercion
+Type coercion é uma conversão implicita automática de valores de uma tipo para outro (como string para numero). Type Conversion é parecido com o coercion porque eles convertem valores de um tipo para outro com uma diferença: type coercion é implicito. Type conversion pode ser tanto implicito quanto explicito.
+
+### Implicit Type Casting
+Conversão de tipo implícita acontece quando o compilador ou _runtime_ automaticamente converte o tipo de dado. JavaScript é uma linguagem de digitação livre e na maioria das vezes os operadores convertem automaticamente um valor para o tipo correto.
+
+### Explicit Type Casting
+É uma conversão explicita de um tipo para outro, onde é preciso especificar qual será o novo tipo de dado. Exemplos de métodos de conversão de tipo: `parseInt()`, `parseFloat()`, `toString()`.
+
+## Estrutura de dados
