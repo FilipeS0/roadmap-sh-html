@@ -229,7 +229,22 @@ switch (expressao) {
 No JavaScript, todas exceções são objetos simples. Embora a maioria das exceções sejam implementações da classe global Error, qualquer objeto antigo pode ser `thrown`(lançado). Com isto em mente, há duas maneiras de lançar uma exceção: diretamente via um objeto de Error, e através de um objeto personalizado.
 
 #### Declaração Throw
+A declaração _Throw_ lança uma exceção definida pelo usuário. A execução da função atual será interrompida (o código abaixo do throw não será executado) e o controle será passado ao primeiro bloco `catch` na stack de chamadas. Se não tiver um bloco de `catch` para pegar o _throw_, o programa será encerrado.
+```
+throw expression;
+```
+- `expression` é a expressão a ser lançada.
 
 #### try/catch/finally
+Estas são maneiras de tratamentos de erros em JavaScript. Dentro de um bloco de código `try` nós temos o código para rodar, dentro do bloco `catch` nós temos o código para rodar, dentro do bloco `finally` nós temos o código que roda depois da execução dos blocos de códigos anteriores, independente do resultado.
 
 #### Error Objects
+Quando um erro acontece de _runtime_ (tempo de execução), um novo objeto `Error` é criado e lançado. Com este objeto `Error`, nós podemos determinar o tipo de erro e tratar de acordo com seu tipo.
+
+##### Tipos de erros
+Além dos construtores de erros, JavaScript também possui outros construtores de erros principais.
+Como:
+
+* AggragateError - Uma coleção de erros lançados simultaneamente.
+* EvalError - Um erro que ocorre durante a avaliação de uma expressão JavaScript.
+* InternalError - Um erro interno do JS, frequentemente indicando um bug no mecanismo.
