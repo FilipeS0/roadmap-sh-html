@@ -134,3 +134,102 @@ for (let passo = 0; passo < 5; passo++) {
   console.log('Andando para o Leste 1 passo');
 }
 ```
+### for
+O loop `for` é uma construção de fluxo de controle padrão padrão em muitas linguagens de programação, incluindo JavaScript. É comumente usado para iterar determinadas sequências ou iterar um determinado numero de vezes e executar um pedaço de código para cada iteração.
+```
+for (let i = 0; i < 4; i++) {
+  console.log(i);
+}
+```
+Este código vai printar [0, 1, 2, 3].
+
+### do ... while
+A instrução `do ... while` cria um loop que executa uma instrução especificada até que a condição de teste seja `false`. A condição é checkada depois de executar o bloco `do`, ou seja primeiro o bloco é executado, depois checka se ele será executado novamente... Sempre será executado pelo menos uma vez um loop `do ... while`.
+```
+let i = 0
+do {
+  console.log(i)
+} while (i > 0)
+```
+Este código vai printar [0].
+
+### while
+A declaração `while` cria um loop que executa um bloco especificado se o teste de condição for `true`. A condição é avaliada antes de executar o código.
+```
+let i = 0;
+while (i < 3) {
+  console.log(i);
+  i++;
+}
+```
+Este código vai printar [0. 1. 2].
+
+### break / continue
+* `break` só pode ser usada para sair de um bloco de loop ou de um switch.
+* `continue` só pode ser usada para pular uma iteração em um loop.
+
+### for ... of
+A declaração `for ... of` executa um loop que opera em uma sequencia de valores originados de um objeto iteravel. Objetos iteraveis incluem instancias de componentes integrados como Array, String, TypedArray, Map, Set, NodeList (e outras coleções do DOM), chamando uma função personalizada com instruções a serem executadas para o valor de cada objeto distinto.
+```
+for (variavel of iteravel) {
+  declaração
+}
+```
+- `variavel` A cada iteração, um valor de uma propriedade diferente é atrivuido á variável.
+- `iteravel` Objeto cujo atributos serão iterados.
+- `declaração` Uma declaração a ser executada a cada iteração.
+
+### for ... in
+A declaração `for ... in` itera sobre todas as propriedades enumeraveis de um objeto que são chaveadas por strings (ignorando as chaveadas por Symbols), incluindo propriedades enumeraveis herdadas.
+
+## Controle de fluxo
+Em JavaScript, o controle de fluxo é uma maneira de como seu computador roda o código de cima para baixo. Começa pela primeira linha e termina na última linha, a não ser que tenha alguma declaração mude o fluxo de controle do programa como um loop, uma condicional, etc.
+Nós podemos controlar o fluxo do programa através de qualquer uma destas estruturas:
+- Sequencial (modo padrão);
+- Declarações de Condições;
+- Tratamento de exceções;
+- Loops e Iteraçõs.
+
+### Declarações de Condicionais
+Quando você escreve um código, você frequentemente quer executar diferentes ações para diferentes decisões. Você pode usar declarações de condicionais em seu código para fazer isso. Em JavaScript, nós temos três declarações de condições: `if`, `if...else` e `switch`.
+
+#### if else
+A declaração `if` executa um bloco de código se a condição for _truthy_ (verdadeira). Se a condição é _falsy_, outro bloco de codigo é executado no `else`.
+```
+if (condição) {
+  bloco de código 1
+} else {
+  bloco de código 2
+}
+```
+Se a condição é verdadeira primeiro bloco de código é executado senão o segundo será.
+
+#### Switch case
+A instrução `switch` avalia uma expressão, combinando o valor da expressão com uma série de cláusulas `case`, e executa a instrução com o primeiro `case` com o valor correspondente até uma instrução de `break` ser encontrada. A claúsula `default` de um `switch` será executada caso nenhum dos `case`s correspondam com o valor da expressão (basicamente o mesmo comportamento de um `else`).
+```
+switch (expressao) {
+  case value1:
+    //Aqui será executado caso a expressao corresponda com o value1
+    break;
+  case value2:
+    //Aqui será executado caso a expressao corresponda com o value2
+    break;
+  ...
+  case valueN:
+    //Aqui será executado caso a expressao corresponda com o valueN
+    break;
+  default:
+    //Aqui será executado caso a expressao não corresponda a nenhum dos valores anteriores
+    break;
+}
+
+```
+
+### Tratamento de exceções
+No JavaScript, todas exceções são objetos simples. Embora a maioria das exceções sejam implementações da classe global Error, qualquer objeto antigo pode ser `thrown`(lançado). Com isto em mente, há duas maneiras de lançar uma exceção: diretamente via um objeto de Error, e através de um objeto personalizado.
+
+#### Declaração Throw
+
+#### try/catch/finally
+
+#### Error Objects
