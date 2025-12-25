@@ -1,0 +1,3 @@
+# Minha jornada aprendendo FrontEnd
+
+Alguns resumos estao em html.md, css.md e javascript.md. Infelizmente não gosto muito desses resumos que fiz, talvez eu exclua e inicie novamente...
