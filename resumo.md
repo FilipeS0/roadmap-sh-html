@@ -41,3 +41,7 @@ Obs: Usar aspas nos nomes das fontes por convenção
 Eh preciso de um IP: `https://link.com`; e um Path: `/api/v2/algo`.
 Tem tambem o tipo de requisicao: GET | POST | PUT | DELETE | PATCH.
 Entao funciona da seguinte forma: eu vou dizer o ip onde vou fazer a solicitacao, o caminho especifico do ip e o metodo que eu estou requisitando
+
+## Optimizar fotos
+Sempre buscar optimizar as fotos para que a pagina fique bem mais leve, sempre que for usar uma imagem, optimizar antes.
+(Use este link)[https://tinypng.com/]
