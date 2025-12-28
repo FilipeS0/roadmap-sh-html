@@ -44,4 +44,4 @@ Entao funciona da seguinte forma: eu vou dizer o ip onde vou fazer a solicitacao
 
 ## Optimizar fotos
 Sempre buscar optimizar as fotos para que a pagina fique bem mais leve, sempre que for usar uma imagem, optimizar antes.
-(Use este link)[https://tinypng.com/]
+[Use este link](https://tinypng.com/)
